@@ -9,7 +9,7 @@ class App:
         self.sequence = [ImageTk.PhotoImage(img)
                             for img in ImageSequence.Iterator(
                                     Image.open(
-                                    r'test.gif'))]
+                                    r'animate.gif'))]
         self.image = self.canvas.create_image(200,200, image=self.sequence[0])
         self.animate(1)
     def animate(self, counter):
